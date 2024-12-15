@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento Acampoeste</title>
+
+    <style>
+        body{
+            background-color:antiquewhite;
+        }
+
+        .painel{
+            margin: auto;
+            background-color:azure;    
+            width: 550px;
+            height: 600px;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 30px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 80px;
+            border: 1px solid rgb(1, 215, 253);
+        }
+        
+       
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="painel">
+      <p style="color: rgb(1, 215, 253); font-size: 19px; font-weight: bold; margin-top: 20px;"> Leia o QRcode abaixo ou use a chave pix copia/cola.</p>
+
+         
+        <img src="3pessoasavista.jpeg" alt="QR-Code" width="50%">
+           
+  
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copiar Texto</title>
+</head>
+<body>
+  <h1></h1>
+  <p id="texto"; style="font-size: 9px;">00020126580014br.gov.bcb.pix0136b4ef6419-6e77-43f7-b671-6a1bc000089b5204000053039865406270.005802BR5924Hiarley Winicios Santana6008Brasilia620905059mfoc63043717</p>
+  
+  
+  <button id="copiar">Copiar Código</button>
+
+  <script>
+    document.getElementById('copiar').addEventListener('click', function() {
+      // Seleciona o texto
+      const texto = document.getElementById('texto').textContent;
+
+      // Cria um elemento temporário para copiar o texto
+      const elementoTemporario = document.createElement('textarea');
+      elementoTemporario.value = texto;
+      document.body.appendChild(elementoTemporario);
+      elementoTemporario.select();
+      document.execCommand('copy');
+      document.body.removeChild(elementoTemporario);
+
+      // Feedback para o usuário
+      alert('Texto copiado para a área de transferência!');
+    });
+  </script>
+
+  <style>
+
+  #copiar{
+    width: 110px;
+    height: 34px;
+    background-color: rgb(1, 215, 253);
+    border: 2px solid black;
+  }
+
+  </style>
+
+<p style="color: rgb(1, 215, 253); font-size: 16px; font-weight: bold; margin-top: 6px;">LEIA AS INSTRUÇÕES:</p>
+<p style="color: rgb(1, 215, 253); font-size: 12px; font-weight: bold; margin-top: 0px; text-align: left; margin-right: 30px; margin-left: 70px;">1- Abra o aplicativo ou site do seu banco e selecione a opção Pix - Copia e cola. </p> 
+<p style="color: rgb(1, 215, 253); font-size: 12px; font-weight: bold; margin-top: 10px; text-align: left; margin-right: 30px; margin-left: 70px;">2- Cole o código Pix ou leia o QR-Code e confirme as informações. </p>
+<p style="color: rgb(1, 215, 253); font-size: 12px; font-weight: bold; margin-top: 10px; text-align: left; margin-right: 30px; margin-left: 70px;">3- Pronto! Agora é só encaminhar o comprovante no whatsaap para o número 77 9 9921-7031. </p>
+
+
+
+</body>
+</html>
